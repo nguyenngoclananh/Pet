@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+
+    <!-- backtoptop   -->
+    <button id="myBtn" title="Go to top">&circ;</button>
+
+
+    <!-- phần header -->
+
+    <header>
+        <div class="container contentheader">
+            <div class="row rowheader">
+                <div id="home" class="col-md-5">
+                    <i class="fas fa-home"></i>
+                    <a class="noidungheader" href=""> <span class="home">HOME:</span> 319 - C16 Lý Thường Kiệt, P.15,
+                        Q.11,
+                        Tp.HCM</a>
+                </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li id="clock">
+                            <i id="iconclock" class="far fa-clock"></i>
+                            <a class="noidungheader" href="">Open Mon-Fri: 6:30AM to 7PM, Sat: 8AM to 5PM</a>
+                        </li>
+                        <li id="mail"><i style="padding-right: 5px ;" class="fas fa-envelope"></i>
+                            <a class="noidungheader" href="">info@themerex.ne</a>
+                        </li>
+                        <li id="login"><i style="padding-right: 5px ;" class="fas fa-arrow-right"></i>
+                            <a class="noidungheaderlogin" href="">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- phần logo header cố định -->
+
+    <div class="wrapper-header">
+        <div class="header-main">
+            <div class="container containerlogo">
+                <div class="row">
+                    <div id="homelogo" class="col-md-5">
+                        <img width="90" height="auto"
+                            src="http://mauweb.monamedia.net/petcare/wp-content/uploads/2019/11/Pet-Care-1.png"
+                            class="header_logo header-logo" alt="Pet Care">
+                    </div>
+                    <div class="col-md-7">
+                        <ul>
+                            <li id="clock">
+                                <a class="callus" href=""><button class="btnphone"><i
+                                            class="fas fa-phone-volume"></i></button>
+                                    Call Us
+                                    <strong style="color: white ;">076 922
+                                        0162</strong></a>
+                            </li>
+                            <li id="mail">
+                                <div id="giohang">
+                                    <span class="giohang">Giỏ Hàng/ 0₫&nbsp;</span>
+                                    <span class="tooltiptext">Chưa có sản phẩm trong giỏ hàng</span>
+                                    <button class="btndolly"><i class="fas fa-dolly-flatbed"></i></button>
+                                </div>
+                            </li>
+                            <li id="login">
+                                <div id="search">
+                                    <div class="wrap">
+                                        <form action="#" class="search" method="post">
+                                            <input type="text" class="searchTerm" placeholder="Tìm kiếm...">
+                                            <button type="submit" class="searchButton">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <button class="btnsearch">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- thanh menu -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning navbar-inverse navbar-fixed-top">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="trangchu" class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cửa hàng </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Giỏ hàng</a></li>
+                                <li><a class="dropdown-item" href="#">Thanh toán</a></li>
+                                <li><a class="dropdown-item" href="#">Kiểm tra đơn hàng</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- chạy slide thú cưng -->
+    <!-- sử dụng animation aos -->
+    <!-- Slideshow container -->
+    <!-- 
+    <div class="swiper mySwiper">
+        <div style="width:100%;" class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./public/img/slider-shop-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./public/img/slider-shop-2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div> -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="bgimgcat">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="sale30" data-aos="fade-right" src="./public/img/sale-30.png" alt="">
+                            </div>
+                            <div id="contentslidecat" data-aos="fade-left" class="col-md-6">
+                                <h1>Năm mới 2020</h1>
+                                <h1 class="tietkiemtien">Tiết kiệm mới!</h1>
+                                <p>Tiết kiệm cho những thứ quan trọng của bạn</p>
+                                <p class="cuahangtructuyen">Tại cửa hàng và trực tuyến</p>
+                                <button class="btnbatdau">Bắt đầu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="bgimgdog">
+                    <div class="container">
+                        <div class="row">
+                            <div data-aos="fade-right" class="col-md-6" id="contentslidedog">
+                                <h1>Mua hàng Online</h1>
+                                <h1 class="tietkiemtien">Tiết kiệm tiền</h1>
+                                <p>Tiết kiệm cho những thứ quan trọng của bạn</p>
+                                <p class="cuahangtructuyen">Tại cửa hàng và trực tuyến</p>
+                                <button class="btnbatdau">Bắt đầu</button>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="sale25" src="./public/img/sale-25.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- chia 3 hình -->
+    <!-- remove bg -->
+
+    <div id="quangcao">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-warning" id="bgvang">
+                    <div class="col-md-6"><img class="imgdog" src="./public/img/slider-dog-small.png" alt=""></div>
+                    <div class="col-md-6">
+                        <p class="tietkiem">Tiết kiệm</p>
+                        <h2 class="hainam">25%</h2>
+                        <h3 class="thucan">
+                            Thức ăn chó
+                            <span>
+                                <p class="meo">mèo</p>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col" id="bgxanhla">
+                    <div class="col-md-6"><img class="imgcat" src="./public/img/slider-cat.png" alt=""></div>
+                    <div class="col-md-6">
+                        <p class="tuvan">Tư vấn</p>
+                        <h2 class="mienphi">Miễn Phí</h2>
+                        <a id="tuvan" href="">Tư vấn <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col" id="bgxanhbien">
+                    <div class="col-md-6"><img class="imgdogxucxich" src="./public/img/slider-dog.png" alt=""></div>
+                    <div class="col-md-6">
+                        <p class="cohan">có hạn!</p>
+                        <h3 class="tietkiemden">tiết kiệm đến
+                            <span class="bonnam">
+                                <p></p>
+                                45%
+                            </span>
+                        </h3>
+                        <a class="nhieuhon" href="">Nhiều hơn <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- phần sản phẩm hiện tại -->
+    <div id="wrapper" data-aos="fade-up" data-aos-duration="3000">
+        <div class="headline">
+            <h3 class="sphientai">Sản phẩm hiện tại</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="pro-info">
+                        <p class="phukien">Phụ kiện</p>
+                        <p class="thongtin">Cổ áo da nguyên bản</p>
+                        <p class="gia">$130.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Thức ăn cho mèo</p>
+                        <p class="thongtin">Giường thú cưng</p>
+                        <p class="gia">$155.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Phụ kiện cho mèo</p>
+                        <p class="thongtin">Mèo và chó nhỏ</p>
+                        <p class="gia"> <span class="price"><del>$65.00&nbsp;</del></span>$45.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Thời trang cho chó</p>
+                        <p class="thongtin">Áo khoác mùa đông</p>
+                        <p class="gia">$745.00</p>
+                        <button class="btngiohang">Lựa chọn</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- phần thanh hình ảnh -->
+
+    <div id="menu-img">
+
+        <ul>
+            <li>
+                <img src="./public/img/ntt1.png" alt="">
+            </li>
+            <li><img src="./public/img/ntt2.png" alt=""></li>
+            <li>
+                <img src="./public/img/ntt3.png" alt="">
+            </li>
+            <li><img src="./public/img/ntt4.png" alt=""></li>
+
+        </ul>
+
+
+    </div>
+
+
+    <!-- phần sản phẩm phổ biến -->
+    <div id="wrapper" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="headline">
+            <h3 class="sphientai">Sản phẩm phổ biến</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-5.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="pro-info">
+                        <p class="phukien">Phụ kiện</p>
+                        <p class="thongtin">Cổ áo da nguyên bản</p>
+                        <p class="gia">$130.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Thức ăn cho mèo</p>
+                        <p class="thongtin">Giường thú cưng</p>
+                        <p class="gia">$155.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Phụ kiện cho mèo</p>
+                        <p class="thongtin">Mèo và chó nhỏ</p>
+                        <p class="gia"> <span class="price"><del>$65.00&nbsp;</del></span>$45.00</p>
+                        <button class="btngiohang">Giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pro-item">
+                    <div class="pro-top">
+                        <a class="pro-thumb" href="">
+                            <img src="./public/img/sec3-6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pro-info">
+                        <p class="phukien">Thời trang cho chó</p>
+                        <p class="thongtin">Áo khoác mùa đông</p>
+                        <p class="gia">$745.00</p>
+                        <button class="btngiohang">Lựa chọn</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- phần giảm thêm miễn phí ship -->
+
+    <div class="container">
+        <div class="row" id="row1">
+            <div class="col-md-6" id="bggiamthem">
+                <h1 class="h1giamthem">Giảm thêm 40%</h1>
+                <p class="phoadon">Trên hóa đơn $100,sử dụng mã giảm giá</p>
+            </div>
+            <div class="col-md-6" id="bgship">
+                <h1 class="h1mienphi">Miễn phí ship</h1>
+                <p class="ptrenhoadon">trên hóa đơn $49~có giới hạn</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- phần sản phẩm -->
+    <div class="section" data-aos="fade-up">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Sản phẩm giảm giá</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-3" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+
+                    <div class="products-widget-slick" data-nav="#slick-nav-3">
+                        <div>
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/food_2-150x150.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Thức ăn bình thường</a></h3>
+                                    <h4 class="product-price"><del
+                                            class="product-old-price">105,000₫</del>&nbsp;100,000&nbsp;₫
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/Irene-Cage-1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Lồng Irene</a></h3>
+                                    <h4 class="product-price"><del class="product-old-price">75,000₫
+                                        </del>&nbsp;70,000&nbsp;₫
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-3-150x150.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Mèo và Chó nhỏ</a></h3>
+                                    <h4 class="product-price"><del class="product-old-price">65,000₫
+                                        </del>&nbsp;45,000&nbsp;₫
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- product widget -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Sản phẩm mới</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-3" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+
+                    <div class="products-widget-slick" data-nav="#slick-nav-3">
+                        <div>
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Cổ áo da nguyên bản</a></h3>
+                                    <h4 class="product-price">130,000,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-2.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Giường thú cưng</a></h3>
+                                    <h4 class="product-price">155,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-3-150x150.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Mèo và Chó nhỏ</a></h3>
+                                    <h4 class="product-price"><del class="product-old-price">65,000₫
+                                        </del>&nbsp;45,000&nbsp;₫
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- product widget -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Sản phẩm mua nhiều</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-3" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+
+                    <div class="products-widget-slick" data-nav="#slick-nav-3">
+                        <div>
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-4.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Áo khoác mùa đông</a></h3>
+                                    <h4 class="product-price">74,000&nbsp;₫ <span style="color: black;">&ndash;</span>
+                                        740,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-6.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Bình giữ nhiệt Norm mới</a></h3>
+                                    <h4 class="product-price">75,000&nbsp;₫ <span style="color: black;">&ndash;</span>
+                                        110,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Cổ áo da nguyên bản</a></h3>
+                                    <h4 class="product-price">130,000,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- product widget -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="section-title">
+                        <h4 class="title">Sản phẩm tự chọn</h4>
+                        <div class="section-nav">
+                            <div id="slick-nav-4" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+
+                    <div class="products-widget-slick" data-nav="#slick-nav-4">
+                        <div>
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Cổ áo da nguyên bản</a></h3>
+                                    <h4 class="product-price">130,000,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/sec3-4.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Áo khoác mùa đông</a></h3>
+                                    <h4 class="product-price">74,000&nbsp;₫ <span style="color: black;">&ndash;</span>
+                                        740,000&nbsp;₫</h4>
+                                </div>
+                            </div>
+                            <!-- /product widget -->
+
+                            <!-- product widget -->
+                            <div class="product-widget">
+                                <div class="product-img">
+                                    <img src="./public/img/Irene-Cage-1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Lồng Irene</a></h3>
+                                    <h4 class="product-price"><del class="product-old-price">75,000₫
+                                        </del>&nbsp;70,000&nbsp;₫
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- product widget -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix visible-sm visible-xs"></div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+
+    <!-- chatbox -->
+
+    <img src="./public/img/fb-messenger.png" alt="" class="open-button" onclick="openForm()">
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <img class="formimg" src="./public/img/Pet-Care-1.png" alt="">
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn btn-6"><span>Send</span></button>
+            <button type="button" class="btn cancel btn-6" onclick="closeForm()">
+                <span>Close</span> </button>
+        </form>
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer id="footer-content">
+        <!-- top footer -->
+        <div class="section1">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer">
+                            <h3 class="footer-title"><img width="90" height="auto" src="./public/img/Pet-Care-1.png"
+                                    class="logofooter" alt="Pet Care"></h3>
+                            <p>Đăng ký để được nhận thông tin mới nhất từ chúng tôi.</p>
+                            <form>
+                                <input type="email" id="email" name="email" placeholder="Email...">
+                                <i id="maybay" class="fas fa-paper-plane"></i>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer">
+                            <h3 class="footer-title">Liên hệ</h3>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fa fa-map-marker"></i>319 C16 Lý Thường Kiệt, Phường 15,
+                                        Quận
+                                        11, Tp.HCM</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>076 922 0162</a></li>
+                                <li><a href="#"><i class="fas fa-envelope"></i>demonhunterg@gmail.com
+                                    </a></li>
+                                <li>
+                                    <span class="monmail">mon@mona.media</span>
+                                </li>
+                                <li><a href="#"><i class="fab fa-skype"></i>demonhunterp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer">
+                            <h3 class="footer-title">Hỗ trợ</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Chăm sóc khách hàng</a></li>
+                                <li><a href="#">Vận chuyển và Đổi trả hàng</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer">
+                            <h3 class="footer-title">Thông tin</h3>
+                            <p>Trong những năm tới, người nostrud tập thể dục, khu học chánh có thể không hoạt động
+                                aliquip.</p>
+                            <ul class="social-icon" data-aos="fade-left">
+                                <li><a style="background-color:#3a589d ;" href="#"><i id="tooltipicon"
+                                            class="fab fa-facebook-f"><span class="tooltiptexticon">Follow on
+                                                Facebook</span></i></a>
+                                </li>
+                                <li><a style="background-color: #3b6994;" href="#"><i id="tooltipicon"
+                                            class="fab fa-instagram"><span class="tooltiptexticon">Follow on
+                                                Instagram</span></i></a>
+                                </li>
+                                <li><a style="background-color:#2478ba ;" href="#"><i id="tooltipicon"
+                                            class="fab fa-twitter"><span class="tooltiptexticon">Follow on
+                                                Twitter</span></i></a>
+                                </li>
+                                <li><a style="background-color:#e5086f ;" href="#"><i id="tooltipicon"
+                                            class="fab fa-flickr"><span class="tooltiptexticon">Follow
+                                                on Flickr</span></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /top footer -->
+
+        <!-- bottom footer -->
+        <div id="bottom-footer">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            &copy; Bản quyền thuộc về&nbsp;.&nbsp;Thiết kế website<i class="fa fa-heart-o"
+                                aria-hidden="true"></i> <img class="logopanda" src="./public/img/logo.png" alt="">
+                            <a class="mona" href="https://colorlib.com" target="_blank">Mona Media</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </span>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /bottom footer -->
+    </footer>
+
+
+
+
+
+
+
+    <script src="./public/js/chatbox.js"></script>
+    <script src="./public/js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper", {});
+        // tự động chạy
+        var swiper = new Swiper('.mySwiper', {
+            autoplay: {
+                // tính bằng giây
+                delay: 5000,
+            },
+        });
+    </script>
+
+    <!-- scrip -->
+    <!-- <script>let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./public/js/javascrip.js"></script>
+    <script src="./public/js/backtotop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./public/js/hovermenu.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
