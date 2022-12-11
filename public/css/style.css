@@ -1,0 +1,1558 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    font-size: 14px;
+    /* lỗi thanh cuộn */
+    overflow-x: hidden;
+
+}
+
+/* phần header */
+
+#home {
+    display: inline;
+}
+
+.col-md-7 ul li {
+    display: inline-block;
+}
+
+header {
+    text-align: left;
+    background: #271a1b;
+    color: #6c6465;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 40px;
+}
+
+.rowheader {
+    position: relative;
+    bottom: 20px;
+}
+
+.noidungheader {
+    text-decoration: none;
+    color: #6c6465;
+}
+
+
+.noidungheaderlogin {
+    text-decoration: none;
+    color: #6c6465;
+}
+
+.noidungheaderlogin:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home {
+    font-weight: bold;
+}
+
+#login {
+    position: relative;
+    left: 65px;
+}
+
+#mail {
+    position: relative;
+    right: -10px;
+}
+
+#clock {
+    position: relative;
+    right: 35px;
+    padding-top: 20px;
+}
+
+#iconclock {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+#home {
+    position: relative;
+    right: 20px;
+    padding-top: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần logo */
+
+#homelogo {
+    position: relative;
+    right: 40px;
+}
+
+.header-main {
+    height: 120px;
+    background: #302021;
+    text-align: left;
+    height: 105px;
+    /* thanh cố định */
+    width: 100%;
+    z-index: 99;
+}
+
+#logo {
+    width: 200px;
+    position: relative;
+    right: 100px;
+}
+
+.logo-left .logo {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.logo {
+    line-height: 1;
+}
+
+.flex-col {
+    max-height: 100%;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+}
+
+#logo img {
+    max-height: 90px;
+}
+
+#logo img {
+    padding: 1px 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần bên phải logo */
+#noidunglogo {
+    position: relative;
+    bottom: 50px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.btnsearch {
+    background: none;
+    border-radius: 50%;
+    font-size: .8em;
+    border: 1px solid currentColor;
+    color: rgb(255, 202, 68);
+    padding: 10px 10px;
+}
+
+.btnsearch:hover {
+    cursor: pointer;
+}
+
+.btndolly {
+    background: none;
+    border-radius: 50%;
+    font-size: .8em;
+    border: 1px solid currentColor;
+    color: rgb(255, 202, 68);
+    padding: 10px 10px;
+}
+
+.btndolly:hover {
+    cursor: pointer;
+}
+
+.btnphone {
+    background: none;
+    border-radius: 50%;
+    font-size: .9em;
+    border: 1px solid currentColor;
+    color: rgb(255, 202, 68);
+    padding: 8px 8px;
+    width: 35px;
+    height: 35px;
+}
+
+#giohang {
+    position: relative;
+    right: -100px;
+    font-weight: 700;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: .9em;
+    color: #fdfdfd;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+}
+
+#giohang .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#giohang:hover .tooltiptext {
+    visibility: visible;
+}
+
+#giohang:hover {
+    color: #ffca44;
+    cursor: pointer;
+}
+
+.callus {
+    text-decoration: none;
+    color: #d3d0d0;
+    position: relative;
+    right: 5px;
+}
+
+#search {
+    position: relative;
+    right: -200px;
+}
+
+.btnsearch:hover {
+    background: #446084;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* thanh menu */
+.wrapper-header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+}
+
+#trangchu {
+    color: #ff5440;
+
+}
+
+.nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: #594129;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #ff5440;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần chạy slide thú cưng */
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-bottom: -20px;
+    padding: 18px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+
+.prev {
+    padding: 8px 11px;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-bottom: -20px;
+    padding: 18px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+
+.next {
+    padding: 8px 11px;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background: #446084;
+}
+
+/* Caption text */
+.text {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#bgimgcat {
+    background-image: url(../img/slider-shop-1.jpg);
+    position: relative;
+    width: 100%;
+    height: 450px;
+    text-align: left;
+    background-size: cover;
+    background-position: 70% 0%;
+}
+
+#bgimgdog {
+    /* overplay background */
+    background:
+        /* top, transparent red, faked with gradient */
+        linear-gradient(rgba(43, 42, 42, 0.45),
+            rgba(26, 25, 25, 0.45)),
+        /* bottom, image */
+        url(../img/slider-shop-2.jpg);
+
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    text-align: left;
+    background-size: cover;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.btnbatdau {
+    background: #ff5440;
+    color: white;
+    border: 1px solid #ff5440;
+    text-transform: uppercase;
+    font-size: .97em;
+    letter-spacing: .03em;
+    font-weight: bolder;
+    text-align: center;
+    padding: .35em 1.7em;
+}
+
+.btnbatdau:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 100px rgb(0 0 0 / 20%);
+}
+
+#contentslidedog {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: white;
+}
+
+.sale25 {
+    position: relative;
+    top: 10px;
+    left: 350px;
+}
+
+#contentslidecat {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.sale30 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.tietkiemtien {
+    font-weight: bold;
+}
+
+.cuahangtructuyen {
+    position: relative;
+    bottom: 15px;
+    font-weight: bold;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* phần form tìm kiếm */
+
+.search {
+    position: relative;
+    left: 50px;
+    display: flex;
+
+}
+
+.searchTerm {
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+
+.searchButton {
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#search .wrap {
+    visibility: hidden;
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -250px;
+    transition: 0.4s;
+}
+
+#search:hover .wrap {
+    visibility: visible;
+    transition: 2s;
+}
+
+.wrap {
+    padding-top: 20px;
+}
+
+.searchButton {
+    background: #d26e4b;
+    border: 1px;
+    color: rgb(255, 202, 68);
+    font-size: 14px;
+    position: relative;
+    right: 5px;
+}
+
+.searchButton i {
+    margin: 5px;
+}
+
+.searchButton:hover {
+    cursor: pointer;
+}
+
+.searchTerm {
+    font-size: 14px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    color: rgba(221, 221, 221, 1);
+    border: 1px solid rgb(221 221 221);
+}
+
+.searchTerm:hover {
+    color: rgba(221, 221, 221, 1);
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần chia 3 hàng ngang quảng cáo */
+
+.col {
+    display: inline-flex;
+    text-align: center;
+}
+
+#quangcao {
+    background: #f6f5f3;
+}
+
+.imgdog {
+    display: block;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    position: relative;
+    right: -10px;
+    top: 10px;
+}
+
+.imgcat {
+    display: block;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.imgdogxucxich {
+    display: block;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    position: relative;
+    right: 40px;
+    top: 10px;
+
+}
+
+#contentquangcao {
+    margin-right: 10px;
+    text-align: left;
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+    line-height: .5em;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.meo {
+    position: relative;
+    bottom: -12px;
+    font-size: 1.25em;
+}
+
+.hainam {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 15px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0;
+    font-weight: 700;
+    line-height: 0.5;
+}
+
+.thucan {
+    color: white;
+    position: relative;
+    top: 40px;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0;
+    padding-bottom: 50px;
+    line-height: 10px;
+    letter-spacing: 1.25px;
+}
+
+.tietkiem {
+    font-size: 1.5em;
+    color: #f1f1f1;
+    position: relative;
+    top: 10px;
+    letter-spacing: 1.25px;
+}
+
+#contentcat {
+    margin-right: 10px;
+    text-align: left;
+    position: relative;
+    right: 70px;
+    bottom: 30px;
+    line-height: .5em;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.tuvan {
+    position: relative;
+    right: 33px;
+    top: 5px;
+    font-size: 1.25em;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.mienphi {
+    color: white;
+    position: relative;
+    right: 30px;
+    top: 5px;
+    font-size: 30px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0;
+    font-weight: 700;
+    line-height: 0.5;
+    letter-spacing: 1.25px;
+}
+
+#tuvan {
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    right: 30px
+}
+
+#tuvan:hover {
+    color: #f1f1f1;
+}
+
+#contentdog {
+    margin-right: 10px;
+    text-align: left;
+    position: relative;
+    right: 90px;
+    bottom: 30px;
+    line-height: .5em;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.cohan {
+    color: #f1f1f1;
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+}
+
+.tietkiemden {
+    color: white;
+    position: relative;
+    left: 15px;
+    bottom: 40px;
+    font-size: 20px;
+
+}
+
+.bonnam {
+    position: relative;
+    bottom: 25px;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+
+.nhieuhon {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+    letter-spacing: 1px;
+
+}
+
+.nhieuhon:hover {
+    color: #f1f1f1;
+}
+
+#bgvang {
+    text-align: left;
+    background: #fec748;
+    margin: 50px 50px;
+    padding: 20px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+}
+
+#bgxanhla {
+    background: #aac31c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 200px;
+    text-align: left;
+    position: relative;
+    right: 15px;
+}
+
+#bgxanhbien {
+    background: #71d6e4;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 35px;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    height: 200px;
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần sản phẩm hiện tại */
+
+.pro-top {
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+#wrapper {
+    max-width: 1190px;
+    margin: 50px auto;
+}
+
+.sphientai {
+    font-size: 2.5em;
+    color: #4f4a4a;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+a.pro-thumb img {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: transform 1s;
+    width: 200px;
+    height: auto;
+    margin: 50px auto;
+}
+
+a.pro-thumb img:hover {
+    transform: scale(1.15);
+}
+
+.pro-info {
+    text-align: center;
+    border: 0.5px solid #ececec;
+    padding-bottom: 30px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.pro-info:hover {
+    box-shadow: 10px 50px 50px 10px rgba(0, 0, 0, .16);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.phukien {
+    padding-top: 20px;
+    color: #b1adac;
+    font-size: .7em;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.btngiohang {
+    background: none;
+    color: #697074;
+    border: 1px solid #e9e9e7;
+    width: 60%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btngiohang:hover {
+    background-color: #667d0e;
+    color: #fff;
+    transition: .5s;
+}
+
+.gia {
+    color: #ffca44;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.price {
+    font-size: .6em;
+    font-weight: bold;
+}
+
+.thongtin {
+    font-size: 1.25em;
+    color: #4f4a4a;
+    padding: 15px 15px 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần thanh menu hình ảnh */
+#menu-img ul {
+    list-style-type: none;
+    background: #f5f7f9;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 100px;
+}
+
+#menu-img ul li {
+    display: inline-table;
+    width: 200px;
+    height: 150px;
+    line-height: 50px;
+    position: relative;
+    top: 70px;
+}
+
+#menu-img ul li i {
+    text-decoration: none;
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần giảm giá miễn phí */
+
+#row1 {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#bggiamthem {
+    display: inline-block;
+    background: #fdb745;
+    width: 45%;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    right: 30px;
+}
+
+#bgship {
+    background: #a5c21c;
+    width: 50%;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+.h1giamthem {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.h1mienphi {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.phoadon {
+    font-size: 1em;
+    color: #fff;
+    margin-top: -10px;
+
+}
+
+.ptrenhoadon {
+    font-size: 1em;
+    color: #fff;
+    margin-top: -10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* phần sản phẩm */
+
+.section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-widget {
+    position: relative;
+}
+
+.product-widget+.product-widget {
+    margin: 30px 0px;
+
+}
+
+.product-widget .product-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+}
+
+.product-img:hover {
+    cursor: pointer;
+}
+
+.product-widget .product-img>img {
+    width: 100%;
+}
+
+.product-widget .product-body {
+    padding-left: 75px;
+    min-height: 60px;
+}
+
+.product-widget .product-body .product-category {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #8D99AE;
+}
+
+.product-widget .product-body .product-name {
+    font-size: 12px;
+    text-align: left;
+}
+
+.product-widget .product-body .product-name>a {
+    text-decoration: none;
+    color: #334862;
+}
+
+.product-widget .product-body .product-name>a:hover,
+.product-widget .product-body .product-name>a:focus {
+    color: #D10024;
+}
+
+.product-widget .product-body .product-price {
+    font-size: 14px;
+    color: #ffca44;
+    text-align: left;
+}
+
+.product-widget .product-body .product-price .product-old-price {
+    font-size: 70%;
+    font-weight: 400;
+    color: #8D99AE;
+}
+
+.product-widget .product-body .product-price .qty {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.product-widget .delete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    background: #1e1f29;
+    border: none;
+    color: #FFF;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.125em;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* backtop */
+.container {
+    margin: auto;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* định dạng cho button */
+#myBtn {
+    display: none;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+
+#myBtn:hover {
+    color: white;
+    background-color: #446084;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* footer */
+#footer-content {
+    background: #302021;
+    color: #B9BABC;
+}
+
+#bottom-footer {
+    background: #1c0e10;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.footer {
+    margin: 30px 0px;
+}
+
+.footer .footer-title {
+    position: relative;
+    left: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 0px 30px;
+    font-weight: bold;
+}
+
+.footer-links li+li {
+    margin-top: 15px;
+
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links li a {
+    color: #9da4a4;
+    text-decoration: none;
+}
+
+.footer-links li i {
+    margin-right: 15px;
+    color: white;
+    width: 14px;
+    text-align: center;
+}
+
+.footer-links li a:hover {
+    color: #ffca44;
+    cursor: pointer;
+}
+
+.copyright {
+    position: relative;
+    bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    font-size: .9em;
+}
+
+.footer-payments li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-payments li a {
+    color: #15161D;
+    font-size: 36px;
+    display: block;
+}
+
+.logopanda {
+    width: 20px;
+    vertical-align: sub;
+}
+
+.mona {
+    color: #8e8788;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+.mona:hover {
+    color: white;
+}
+
+.logofooter {
+    position: relative;
+    right: 50px;
+    width: 100;
+    height: auto;
+    display: inline-block;
+}
+
+.monmail {
+    position: relative;
+    left: 29px;
+}
+
+.monmail:hover {
+    color: #ffca44;
+}
+
+#email {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    height: 35px;
+}
+
+#maybay {
+    position: relative;
+    bottom: 30px;
+    left: 220px;
+    color: #02a010;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* thiết lập phần icon */
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-icon li a:hover {
+    opacity: .9;
+}
+
+.social-icon li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* tooltipicon */
+#tooltipicon {
+    position: relative;
+    display: inline-block;
+}
+
+#tooltipicon .tooltiptexticon {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 14px;
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 35px;
+    z-index: 1;
+}
+
+#tooltipicon:hover .tooltiptexticon {
+    visibility: visible;
+}
+
+/* chatbox */
+
+label {
+    color: white;
+}
+
+.btn-6 {
+    background: rgb(247, 150, 192);
+    background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+.formimg {
+    width: 20%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.formimg:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 300px;
+    right: 28px;
+    z-index: 1;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid none;
+    z-index: 99;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-image: url(../img/692ce611882e62a0c23891df637f0930.png);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: none;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: white;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: none;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/* test */
+.visible-title {
+    visibility: visible;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* reponsive */
+@media screen and (max-width: 769px) {
+    .contentheader {
+        display: none;
+    }
+
+    #homelogo {
+        text-align: center;
+    }
+
+    #clock {
+        display: none;
+    }
+
+    #login {
+        display: none;
+    }
+
+    .tooltiptext {
+        display: none;
+    }
+
+    .giohang {
+        display: none;
+    }
+
+    .btndolly {
+        position: relative;
+        bottom: 60px;
+        left: 200px;
+    }
+}
